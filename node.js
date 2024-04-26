@@ -63,3 +63,16 @@ function minMax(arr) {
   
   minMax([1])
     // ➞ [1, 1]
+
+    function detectWord(str) {
+        var words='';
+         for(let i =0;i<str.length;i++){
+            if(str[i]===str[i].toLowerCase()){
+              words+= str[i]
+            }
+         }
+         return words
+       }
+       
+       console.log(detectWord("UcUNFYGaFYFYGtNUH"))
+         // ➞ "cat"
