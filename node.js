@@ -89,3 +89,15 @@ function minMax(arr) {
           
           console.log( charCount("b", "big fat bubble"))
         //   4
+
+        function numberSplit(n) {
+            let firstNum = Math.round(n/2);
+             let secondNum= n- firstNum;
+             return [secondNum, firstNum]
+           }
+           
+           console.log(numberSplit(4))
+             // ➞ [2, 2]
+           
+           console.log(numberSplit(11)) 
+             // ➞ [5, 6]
