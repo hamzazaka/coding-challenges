@@ -76,3 +76,16 @@ function minMax(arr) {
        
        console.log(detectWord("UcUNFYGaFYFYGtNUH"))
          // ➞ "cat"
+
+         function charCount(myChar, str) {
+            let letter=0
+            for(let i =0;i < str.length;i++){
+              if(str[i]===myChar){
+                letter++
+              }
+            }
+            return letter
+          }
+          
+          console.log( charCount("b", "big fat bubble"))
+        //   4
