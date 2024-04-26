@@ -101,3 +101,32 @@ function minMax(arr) {
            
            console.log(numberSplit(11)) 
              // ➞ [5, 6]
+
+             function numberSplit(n) {
+                let firstNum = Math.round(n/2);
+                 let secondNum= n- firstNum;
+                 return [secondNum, firstNum]
+               }
+               
+               // console.log(numberSplit(4))
+               //   // ➞ [2, 2]
+               
+               // console.log(numberSplit(11)) 
+               //   // ➞ [5, 6]
+               
+               function filterArray(arr) {
+                // return arr.filter((num)=>Number.isInteger(num))
+                 let num =[];
+                 for(let i =0;i<=arr.length;i++){
+                   if(Number.isInteger(arr[i])){
+                     num.push(arr[i])
+                   }
+                 }
+                 return num
+               }
+               
+               console.log(filterArray([1, 2, "aasf", "1", "123", 123]))
+                           // ➞ [1, 2]
+               
+               filterArray([1, "a", "b", 0, 15]) 
+                 // ➞ [1, 0, 15]
