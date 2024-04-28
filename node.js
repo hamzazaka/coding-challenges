@@ -130,3 +130,20 @@ function minMax(arr) {
                
                filterArray([1, "a", "b", 0, 15]) 
                  // ➞ [1, 0, 15]
+
+
+                 function countVowels(str) {
+                    const vowels=['a','e','i','o','u']
+                     let arr= str.split('');
+                    let count =0;
+                    for(i=0;i<=arr.length;i++){
+                      if(vowels.includes(arr[i])){
+                        count++
+                      }
+                    }
+                    return count
+                    
+                  }
+                  
+                  console.log(countVowels("Celebration"))
+                    // ➞ 5
