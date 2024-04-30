@@ -164,3 +164,19 @@ function minMax(arr) {
                        
                        console.log(sortByLength(["Google", "Apple", "Microsoft"]))
                        // ➞ ["Apple", "Google", "Microsoft"]
+
+
+                       function getAbsSum(arr) {
+                        let addition=0
+                       for(let i =0;i< arr.length;i++){
+                         if(arr[i]<0){
+                          addition += -arr[i]
+                         }else{
+                           addition+= arr[i]
+                         }
+                       }
+                      return addition
+                    }
+                    
+                    console.log(getAbsSum([2, -1, 4, 8, 10]))
+                      // ➞ 25
