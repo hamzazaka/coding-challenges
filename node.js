@@ -217,3 +217,20 @@ function minMax(arr) {
                           
                           console.log(bomb("There is a bomb."))
                             // ➞ "Duck!!!"
+
+                            function removeVowels(str) {
+                                let vowels=['a','e','i','o','u'];
+                                let result='';
+                              
+                                for(let i =0;i<str.length;i++){
+                                  let currentChar = str[i].toLowerCase();
+                              
+                                  if(!vowels.includes(currentChar)){
+                                    result+=str[i]
+                                  }
+                                }
+                                return result
+                              }
+                              
+                              console.log(removeVowels("I have never seen a thin person drinking Diet Coke."))
+                              // ➞ " hv nvr sn  thn prsn drnkng Dt Ck."
