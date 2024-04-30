@@ -200,3 +200,20 @@ function minMax(arr) {
                         // ➞ [1, 2, 5, 10, 50]
 
                         // I just did bubble sort
+
+
+                        function bomb(str) {
+                            // return (str.toLowerCase()).includes('bomb')?'Duck!!!': 'There is no bomb, relax.'
+                            let find= str.split(' ')
+                            for(let i=0;i<find.length;i++){
+                              if(find[i].includes('bomb')){
+                                return "Duck!!!"
+                              }else{
+                                return "There is no bomb"
+                              }
+                            }
+                            
+                          }
+                          
+                          console.log(bomb("There is a bomb."))
+                            // ➞ "Duck!!!"
