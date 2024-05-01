@@ -276,3 +276,22 @@ function firstVowel(str) {
   
   console.log(findLargestNums([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]])) 
     // ➞ [7, 90, 2]
+
+    // Factorial of a Number
+
+function factorial(f){
+    let number =1;
+    for(let i=2;i<= f;i++){
+      number =  i* number
+      // console.log(i*number)
+      // console.log("this is i",i)
+      // console.log("this is number",number)
+  
+  
+    }
+    return number
+  }
+  
+  console.log(factorial(0))
+  console.log(factorial(1))
+  console.log(factorial(5))
