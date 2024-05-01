@@ -246,3 +246,33 @@ function minMax(arr) {
                               console.log(fibonacci(3)) 
                               // [0,1,1]
                             //   learning fibonacci sequence 
+
+                            // console.log(fibonacci(3)) 
+
+function firstVowel(str) {
+
+    let vowels =['a','e','i','o','u'];
+  
+    for(let i =0;i<str.length;i++){
+      for( let j =0;j<vowels.length;j++){
+        if(str[i].toLowerCase()===vowels[j]){
+          return i
+        }
+      }
+    }
+    return -1
+  }
+  
+  // console.log(firstVowel("strIng")) 
+    // ➞ 0
+  
+  function findLargestNums(arr) {
+     let largeNumber=[]
+    for(let i =0;i<arr.length;i++){
+       largeNumber.push(Math.max(...arr[i]))
+    }
+    return largeNumber
+  }
+  
+  console.log(findLargestNums([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]])) 
+    // ➞ [7, 90, 2]
