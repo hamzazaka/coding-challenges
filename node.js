@@ -295,3 +295,15 @@ function factorial(f){
   console.log(factorial(0))
   console.log(factorial(1))
   console.log(factorial(5))
+
+  function getDays(date1, date2) {
+    const millisec= 1000* 60 *60 *24;
+    const diffInMilli= date2-date1;
+    return Math.floor(diffInMilli/millisec)
+  }
+  
+  console.log(getDays(
+    new Date("June 14, 2019"),
+    new Date("June 20, 2019")
+  )) 
+    // ➞ 6
