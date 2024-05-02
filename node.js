@@ -307,3 +307,20 @@ function factorial(f){
     new Date("June 20, 2019")
   )) 
     // ➞ 6
+
+    function numInStr(arr) {
+        var result=[];
+        for(let i=0;i<arr.length;i++){
+          for( let j=0;j<arr[i].length;j++){
+            console.log(arr[i][j])
+            var num = parseInt(arr[i][j]);
+            if(num){
+              result.push(arr[i])
+            }
+          }
+        }
+        return result
+      }
+      
+      console.log(numInStr(["1a", "a", "2b", "b"]))
+        // ➞ ["1a", "2b"]
