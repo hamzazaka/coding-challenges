@@ -324,3 +324,43 @@ function factorial(f){
       
       console.log(numInStr(["1a", "a", "2b", "b"]))
         // ➞ ["1a", "2b"]
+        function reverseOdd(str) {
+            let words= str.split(' ');
+            let results=[];
+            for(let i=0;i<words.length;i++){
+              let word= words[i];
+              if(word.length%2!==0){
+                let reversedWord ='';
+                for(let j=word.length-1;j>=0;j--){
+                  reversedWord+=word[j]
+                }
+                results.push(reversedWord)
+              }else{
+                results.push(word)
+              }
+            }
+            return results.join(' ')
+          }
+          
+          // console.log(reverseOdd("Bananas"))
+            // ➞ "sananaB"
+          
+          // console.log(reverseOdd("One two three four"))
+            // ➞ "enO owt eerht four"
+          
+          function num_of_digits(num) {
+            let numStr=num.toString()
+            let totalNum=0;
+            for(let i=0;i<numStr.length;i++){
+              console.log(numStr[i])
+              if(numStr[i]==='-'){
+                continue
+              }else{
+                totalNum++
+              }
+            }
+            return totalNum
+          }
+          
+          // console.log(num_of_digits(-2147483647))
+            // ➞ 
