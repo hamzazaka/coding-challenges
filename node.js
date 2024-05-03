@@ -379,3 +379,18 @@ function factorial(f){
                 }
                 return null;
             }
+
+            function reverseWords(string) {
+                let newStr=[];
+                let strArr=string.split(' ')
+              
+                for(let i =strArr.length-1;i>=0;i--){
+                  if(strArr[i]!==''){
+                    newStr.push(strArr[i])
+                  }
+                }
+                return newStr.join(' ')
+              }
+              
+              console.log(reverseWords(" the sky is blue"))
+                // ➞ "blue is sky the"
