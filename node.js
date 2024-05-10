@@ -394,3 +394,37 @@ function factorial(f){
               
               console.log(reverseWords(" the sky is blue"))
                 // ➞ "blue is sky the"
+
+                function findNemo(sentence) {
+                    // return sentence.split(' ').indexOf('Nemo') +1;
+                   
+                     let sentenceNum= sentence.split(' ')
+                     let nemoNumber=[];
+                     for(let i =0;i<sentenceNum.length;i++){
+                       if(sentenceNum[i]==='Nemo'){
+                         return `I found Nemo at ${i+1}`
+                       }
+                       }
+                     return "i can't find neomo"
+                     
+                   }
+                   
+                   // console.log(findNemo("I am finding Nemo !"))
+                     // ➞ "I found Nemo at 4!"
+                   
+                   function capToFront(s) {
+                     let upper ='';
+                     let lower='';
+                   
+                     for(let c of s){
+                       console.log(c)
+                       if(c===c.toUpperCase()){
+                         upper+=c;
+                       }else{
+                         lower+=c;
+                       }
+                     }
+                     return upper+lower
+                   }
+                   
+                   console.log(capToFront("shOrtCAKE"))
