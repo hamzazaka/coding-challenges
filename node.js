@@ -428,3 +428,26 @@ function factorial(f){
                    }
                    
                    console.log(capToFront("shOrtCAKE"))
+
+                   function missingNum(arr) {
+  
+                    const n =arr.length + 1;
+                    let expectedSum =0;
+                    let actualSum=0;
+                  
+                    for(let i =1;i<=n;i++){
+                      expectedSum+=i;
+                      console.log(expectedSum)
+                    }
+                  
+                    for(let num of arr){
+                      actualSum+=num
+                      console.log(actualSum)
+                  
+                    }
+                    return expectedSum- actualSum
+                  
+                  }
+                  
+                  console.log(missingNum([1,2,3,4,6,7,8,9,10]))
+                    // ➞ 5
