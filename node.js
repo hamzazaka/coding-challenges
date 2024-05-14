@@ -511,4 +511,17 @@ function factorial(f){
                    
                    console.log(hackerSpeak("javascript is cool")) 
                      // ➞ "j4v45cr1pt 15 c00l"
+
+                     function sumTwoSmallestNums(arr) {
+                      // let positives =arr.filter(num=>num>0);
+                      // positives.sort((a,b)=>a-b);
+                      // return positives[0]+positives[1]
+                    
+                      
+                      
+                    }
+                    
+                    console.log(sumTwoSmallestNums([2, 9, 6, -1]) )
+                      // ➞ 8
+                    
                    
