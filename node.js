@@ -480,4 +480,35 @@ function factorial(f){
                     
                     console.log(specialReverse("word searches are super fun", "s"))
                     // ➞ "word sehcraes are repus fun"
+
+                    function hackerSpeak(str) {
+                      let result ='';
+                   
+                     for (let i = 0; i < str.length; i++) {
+                         switch (str[i]) {
+                           case 'a':
+                             result += '4';
+                             break;
+                           case 'e':
+                             result += '3';
+                             break;
+                           case 'i':
+                             result += '1';
+                             break;
+                           case 'o':
+                             result += '0';
+                             break;
+                           case 's':
+                             result += '5';
+                             break;
+                           default:
+                             result += str[i];
+                         }
+                       }
+                   
+                       return result;
+                     }
+                   
+                   console.log(hackerSpeak("javascript is cool")) 
+                     // ➞ "j4v45cr1pt 15 c00l"
                    
