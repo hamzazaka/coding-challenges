@@ -463,4 +463,21 @@ function factorial(f){
                    
                    console.log(makeTitle("This is a title")) 
                      // ➞ "This Is A Title"
+
+                     function specialReverse(s, c) {
+                      let arrStr= s.split(' ');
+                      let newStr=[]
+                    
+                       for (let i=0;i<arrStr.length;i++){
+                         if(arrStr[i].charAt(0)===c){
+                           newStr.push(arrStr[i].split('').reverse().join(''))
+                         }else{
+                           newStr.push(arrStr[i])
+                         }
+                       }
+                      return newStr.join(' ')
+                    }
+                    
+                    console.log(specialReverse("word searches are super fun", "s"))
+                    // ➞ "word sehcraes are repus fun"
                    
