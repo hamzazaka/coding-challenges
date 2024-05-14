@@ -451,3 +451,16 @@ function factorial(f){
                   
                   console.log(missingNum([1,2,3,4,6,7,8,9,10]))
                     // ➞ 5
+                    function makeTitle(str) {
+                      let arrStr= str.split(' ');
+                      let newStr=[]
+                   
+                      for(const word of arrStr){
+                         newStr.push(word.charAt(0).toUpperCase()+word.slice(1))
+                      }
+                     return newStr.join(' ')
+                   }
+                   
+                   console.log(makeTitle("This is a title")) 
+                     // ➞ "This Is A Title"
+                   
