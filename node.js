@@ -580,3 +580,21 @@ function factorial(f){
                           }
                           
                           console.log(reverse("This is a typical sentence.") )
+
+                          function sevenBoom(arr) {
+
+                            for(let i =0;i<arr.length;i++){
+                              let numStr=arr[i].toString();
+                              for(let j=0;j<numStr.length;j++){
+                                if(numStr[j]==='7'){
+                                  return "Boom!"
+                                }
+                              }
+                            }
+                            return 'there is nothing'
+                            
+                          }
+                          // time complexity is 0n2
+                          
+                          console.log(sevenBoom([2, 55, 60, 97, 86]) )
+                            // ➞ "Boom!"
