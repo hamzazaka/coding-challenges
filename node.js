@@ -560,3 +560,23 @@ function factorial(f){
                         console.log(removeABC("This might be a bit hard") )
                           // ➞ "This might e  it hrd"
                    
+
+                          function reverse(str) {
+                            const arrStr= str.split(' ');
+                            let result=[]
+                          
+                            for(let i =0;i<arrStr.length;i++){
+                              if(arrStr[i].length>4){
+                                let reverseWord=''
+                                for(let j = arrStr[i].length-1;j>=0;j--){
+                                 reverseWord += arrStr[i][j]
+                                }
+                                result.push(reverseWord)
+                              }else{
+                              result.push(arrStr[i])
+                              }
+                            }
+                            return result.join(' ')
+                          }
+                          
+                          console.log(reverse("This is a typical sentence.") )
