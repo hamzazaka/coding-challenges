@@ -537,4 +537,26 @@ function factorial(f){
                       console.log(factorize(12))
                         // ➞ [1, 2, 3, 4, 6, 12]
                     
+
+                        function removeABC(str) {
+                          const strArr= str.split('');
+                          let newStr=[]
+                        
+                          for(let i =0;i<strArr.length;i++){
+                        
+                            switch(strArr[i]){
+                              case 'a':
+                              case 'b':
+                              case 'c':
+                                break;
+                              default:
+                                newStr.push(str[i])
+                            }
+                          }
+                          return newStr.join('')
+                          
+                        }
+                        
+                        console.log(removeABC("This might be a bit hard") )
+                          // ➞ "This might e  it hrd"
                    
