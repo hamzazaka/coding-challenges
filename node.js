@@ -632,3 +632,22 @@ function insertWhitespace(s) {
 
 console.log(insertWhitespace("SheWalksToTheBeach"))
   // ➞ "She Walks To The Beach"
+  
+  function doubleSwap(str, c1, c2) {
+
+    let solution=''
+  
+    for(let i=0;i<str.length;i++){
+      if(str[i]===c1){
+        solution+=c2
+      }else if(str[i]===c2){
+        solution+=c1
+      }else{
+      solution+=str[i]
+      }
+    }
+    return solution
+  }
+  
+  console.log(doubleSwap( "aabbccc", "a", "b"))
+    // ➞ "bbaaccc"
