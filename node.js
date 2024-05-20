@@ -632,7 +632,7 @@ function insertWhitespace(s) {
 
 console.log(insertWhitespace("SheWalksToTheBeach"))
   // ➞ "She Walks To The Beach"
-  
+
   function doubleSwap(str, c1, c2) {
 
     let solution=''
@@ -651,3 +651,23 @@ console.log(insertWhitespace("SheWalksToTheBeach"))
   
   console.log(doubleSwap( "aabbccc", "a", "b"))
     // ➞ "bbaaccc"
+
+    function uncensor(str, vowels) {
+      const strArr= str.split('');
+      const vowelsArr=vowels.split('')
+      let solution=''
+      let vowelsIndex=0;  
+   
+     for(let i =0;i<strArr.length;i++){
+       if(strArr[i]==='*'){
+         solution+= vowelsArr[vowelsIndex];
+         vowelsIndex++
+       }else{
+         solution+= str[i]
+       }
+     }
+     return solution
+   }
+   
+   console.log(uncensor("Wh*r* d*d my v*w*ls g*?", "eeioeo"))
+     // ➞ "Where did my vowels go?"
