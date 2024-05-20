@@ -615,3 +615,20 @@ function insertionSort(arr) {
 const arr = [8,20,-2,4,-6]
 insertionSort(arr);
 console.log(arr)
+
+function insertWhitespace(s) {
+  const Arrs= s.split('');
+  let solutionArr=[Arrs[0]]
+
+  for(let i=1;i<Arrs.length;i++){
+    if(Arrs[i]===Arrs[i].toUpperCase()){
+      solutionArr.push(' ')
+    }
+    solutionArr.push(Arrs[i])
+  }
+  return solutionArr.join('')
+  
+}
+
+console.log(insertWhitespace("SheWalksToTheBeach"))
+  // ➞ "She Walks To The Beach"
