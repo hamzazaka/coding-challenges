@@ -673,3 +673,7 @@ console.log(insertWhitespace("SheWalksToTheBeach"))
      // ➞ "Where did my vowels go?"
      console.log(uncensor("Wh*r* d*d my v*w*ls g*?", "eeioeo"))
      // ➞ "Where did my vowels go?"
+
+    //  STRINGS ////////
+
+    
