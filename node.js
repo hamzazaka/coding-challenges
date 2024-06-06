@@ -676,4 +676,35 @@ console.log(insertWhitespace("SheWalksToTheBeach"))
 
     //  STRINGS ////////
 
+    function reverseWords(s){
+      // return s.split('.').reverse().join('.');
+   
+      let words=[];
+      let word='';
+     
+       for(let i =0;i<s.length;i++){
+         if(s[i]==='.'){
+           words.push(word)
+           word=''
+         }else{
+           word+=s[i]
+         }
+       }
+   
+      words.push(word)
+   
+      let result='';
+      for(let i =words.length-1;i>=0;i--){
+        result+=words[i];
+        if(i>0){
+          result+='.'
+        }
+      }
+     return result
+     
+   }
+   
+   console.log(reverseWords('i.like.this.program.very.much'))
+    // anser much.very.program.this.like.i
+
     
