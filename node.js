@@ -677,77 +677,35 @@ console.log(insertWhitespace("SheWalksToTheBeach"))
      // ➞ "Where did my vowels go?"
 
     //  STRINGS ////////
-
-    function reverseWords(s){
-      // return s.split('.').reverse().join('.');
-   
-      let words=[];
-      let word='';
-     
-       for(let i =0;i<s.length;i++){
-         if(s[i]==='.'){
-           words.push(word)
-           word=''
-         }else{
-           word+=s[i]
-         }
-       }
-   
-      words.push(word)
-   
-      let result='';
-      for(let i =words.length-1;i>=0;i--){
-        result+=words[i];
-        if(i>0){
-          result+='.'
-        }
-      }
-     return result
-     
-   }
-   
-   console.log(reverseWords('i.like.this.program.very.much'))
-    // anser much.very.program.this.like.i
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
+// reverse words
 
 
+function reverseWords(s){
+  
+  let words=[];
+  let word ='';
 
+  for( let i =0;i<s.length;i++){
+    if(s[i]==='.'){
+    words.push(word);
+    word=''
+  }else{
+    word+=s[i]
+  }
+  }
+  words.push(word);
 
-
-
-
-
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-   console.log(reverseWords('i.like.this.program.very.much'))
-
+  let result='';
+  for(let i =words.length-1;i>=0;i--){
+    result+=words[i]
+    if(i>0){
+      result+='.'
+    }
+  }
+  return result
+}
+console.log(reverseWords('i.like.this.program.very.much'))
+// anser much.very.program.this.like.i
 
 
 
