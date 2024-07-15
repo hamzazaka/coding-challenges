@@ -707,6 +707,24 @@ function reverseWords(s){
 console.log(reverseWords('i.like.this.program.very.much'))
 // anser much.very.program.this.like.i
 
+function longestCommonPrefix(n,arr){
+  if(n===0) return "-1";
+
+  let prefix = arr[0];
+
+ for(let i =1;i<n;i++){
+   while(arr[i].indexOf(prefix)!==0){
+     prefix= prefix.slice(0, -1);
+     if(prefix==='') return "-1"
+   }
+ }
+ return prefix
+}
+
+console.log(longestCommonPrefix(4,['geeksforgeeks', 'geeks', 'geek', 'geezer']))
+// Output: gee
+// Explanation: "gee" is the longest common prefix in all the given strings.
+
 
 
 
