@@ -725,6 +725,34 @@ console.log(longestCommonPrefix(4,['geeksforgeeks', 'geeks', 'geek', 'geezer']))
 // Output: gee
 // Explanation: "gee" is the longest common prefix in all the given strings.
 
+function sevenBoom(arr) {
+
+  // for(let i =0;i<arr.length;i++){
+
+  //   if(arr[i].toString().includes(7)){
+  //     return 'Boom'
+  //   }
+  // }
+  // return 'there is no no7'
+
+  for(let i =0;i<arr.length;i++){
+    let num = arr[i]
+
+    while(num>0){
+      console.log(num%10)
+      if(num%10===7){
+        return 'Boom'
+      }
+      num = Math.floor(num/10)
+    }
+  }
+  return 'there is no no 7 '
+}
+
+console.log(sevenBoom([2, 55, 60, 97, 86]))
+  // ➞ "Boom!"
+// 97 contains the number seven.
+
 
 
 
