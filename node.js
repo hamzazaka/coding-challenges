@@ -763,6 +763,10 @@ console.log(sevenBoom([2, 55, 60, 97, 86]))
 console.log(sevenBoom([2, 55, 60, 97, 86]))
 console.log(sevenBoom([2, 55, 60, 97, 86]))
 console.log(sevenBoom([2, 55, 60, 97, 86]))
+console.log(sevenBoom([2, 55, 60, 97, 86]))
+console.log(sevenBoom([2, 55, 60, 97, 86]))
+
+console.log(sevenBoom([2, 55, 60, 97, 86]))
 
 
 
