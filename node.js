@@ -768,6 +768,24 @@ console.log(sevenBoom([2, 55, 60, 97, 86]))
 console.log(sevenBoom([2, 55, 60, 97, 86]))
 console.log(sevenBoom([2, 55, 60, 97, 86]))
 
+function minMax(arr) {
+
+  let minNumber=arr[0];
+  let maxNumber=arr[0]
+
+  for(let i =0;i<arr.length;i++){
+    if(arr[i]<minNumber){
+      minNumber=arr[i]
+    }
+    if(arr[i]>maxNumber){
+      maxNumber = arr[i]
+    }
+  }
+  return [minNumber, maxNumber]
+}
+
+console.log(minMax([1, 2, 3, 4, 5]))
+
 
 
 
